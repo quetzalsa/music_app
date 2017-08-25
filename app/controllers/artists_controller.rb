@@ -14,11 +14,13 @@ class ArtistsController < ApplicationController
 
   # GET /artists/new
   def new
+    @genres = Genre.all
     @artist = Artist.new
   end
 
   # GET /artists/1/edit
   def edit
+    @genres = Genre.all
   end
 
   # POST /artists
